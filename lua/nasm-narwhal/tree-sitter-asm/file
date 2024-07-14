@@ -1,0 +1,12 @@
+GLOBAL wjrnfw
+BITS 64
+
+    mov rax, rbx
+    shr rax, -1
+labal:
+b:    push rdi
+    add rsp, [rdi+rsi]
+    ;ala ma kota
+a:
+    syscall
+    ret
